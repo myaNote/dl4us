@@ -8,7 +8,7 @@ EXPOSE 8888
 
 RUN apt update
 RUN apt -y upgrade
-RUN apt install -y python3 python3-pip
+RUN apt install -y apt-utils python3 python3-pip
 RUN pip3 install -r /tmp/requirements.txt
 
 # for lesson 1
